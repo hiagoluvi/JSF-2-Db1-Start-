@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html" lang="en" xml:lang="en">
+<h:head>
+	<title>Cadastro Avaliador</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css" />
+	<link rel="stylesheet"
+		href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+	<meta charset="utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<script src="js/jquery-latest.js"></script>
+	<script src="js/jquery.tablesorter.min.js"></script>
+
+</h:head>
+<style>
+strong#strong {
+	color: black;
+	margin-left: 46px;
+	margin-top: 25px;
+}
+
+strong#stroong {
+	color: black;
+	margin-left: 46px;
+	margin-top: 25px;
+}
+</style>
+
+<h:body>
+	<h:form>
+		<div id="wrap">
+			<header id="avaliador">
+				<h2 style="color: black;">CADASTRAR NOVO AVALIADOR</h2>
+			</header>
+			<section id="campos">
+						<div class="container">
+							<div class="row">
+								<div class="col">NOME</div>
+								<h:inputText name="campoAvaliador" id="campo" class="col"/>
+							</div>
+						</div>
+								<div>
+									<strong id="stroong">EMAIL</strong>
+									<h:inputText name="campoAvaliador2" id="campos" />
+								</div>
+			</section>
+			<section id="texto">
+				<h5 style="color: black;">AVALIA AS LINGUAGENS:</h5>
+			</section>
+			<section id="linha">
+				<hr />
+			</section>
+			<section id="checkbox">
+				<table id="cblEscolhaDaOpcao" class="test">
+					<tr>
+						<td><input id="cblEscolhaDaOpcao_0" type="checkbox"
+							name="cblEscolhaDaOpcao$0" value="1" /><label
+							for="cblEscolhaDaOpcao_0">JAVA</label></td>
+						<td><input id="cblEscolhaDaOpcao_1" type="checkbox"
+							name="cblEscolhaDaOpcao$1" value="2" /><label
+							for="cblEscolhaDaOpcao_1">NET</label></td>
+						<td><input id="cblEscolhaDaOpcao_2" type="checkbox"
+							name="cblEscolhaDaOpcao$2" value="3" /><label
+							for="cblEscolhaDaOpcao_2">DELPHI</label></td>
+						<td><input id="cblEscolhaDaOpcao_3" type="checkbox"
+							name="cblEscolhaDaOpcao$3" value="4" /><label
+							for="cblEscolhaDaOpcao_3">COBOL</label></td>
+					</tr>
+					<tr>
+						<td><input id="cblEscolhaDaOpcao_4" type="checkbox"
+							name="cblEscolhaDaOpcao$4" value="5" /><label
+							for="cblEscolhaDaOpcao_4">C#</label></td>
+						<td><input id="cblEscolhaDaOpcao_5" type="checkbox"
+							name="cblEscolhaDaOpcao$5" value="6" /><label
+							for="cblEscolhaDaOpcao_5">PASCAL</label></td>
+						<td><input id="cblEscolhaDaOpcao_6" type="checkbox"
+							name="cblEscolhaDaOpcao$6" value="7" /><label
+							for="cblEscolhaDaOpcao_6">ARNOLD C</label></td>
+						<td><input id="cblEscolhaDaOpcao_7" type="checkbox"
+							name="cblEscolhaDaOpcao$7" value="8" /><label
+							for="cblEscolhaDaOpcao_7">OUTRAS</label></td>
+					</tr>
+				</table>
+			</section>
+			<section id="button">
+				<button type="button" class="btn btn-danger3">
+					<span id="salvar">SALVAR</span><span
+						class="glyphicon glyphicon-floppy-disk" id="botao"></span>
+				</button>
+			</section>
+		</div>
+	</h:form>
+</h:body>
+</html>
